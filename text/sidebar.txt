@@ -1,0 +1,7 @@
+...title=sidebar-test
+...static=true
+
+Sidebar
+-------
+
+This is a sidebar.

@@ -1,0 +1,5 @@
+...author=krdor
+...title=Hello
+...static=true
+
+Welcome to your new blog!

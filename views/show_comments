@@ -1,0 +1,22 @@
+<a name="comments"></a>
+%if len(comments) > 0:
+<div class="comment-area">
+    <h2>Comments</h2>
+
+    %for c in comments:
+        <div class="comment">
+            {{!c.html}}
+
+            <div class="comment-meta">
+                %if len(c.website) > 0:
+                    Comment by <a href="{{c.website}}">{{c.name}}</a> |
+                %else:
+                    Comment by {{c.name}} |
+                %end
+                Posted on {{c.date}}
+            </div>
+        </div>
+    %end
+
+</div>
+%end

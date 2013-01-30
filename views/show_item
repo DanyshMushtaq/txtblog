@@ -1,0 +1,16 @@
+<div class="item">
+    <h1>{{!item.title}}</h1>
+
+    {{!item.html}}
+
+    <div class="post-meta">
+        Posted on {{item.date}}
+        % if len(item.categories) > 0:
+            | categories:
+            %for c in item.categories:
+                {{c}} \\
+            %end
+        %end
+    </div>
+</div>
+

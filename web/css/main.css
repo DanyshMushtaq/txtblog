@@ -1,0 +1,324 @@
+/* ==========================================================================
+   CSS resets
+   ========================================================================== */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,
+address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,
+li,fieldset,form,lMerienda,legend,table,caption,tbody,tfoot,thead,tr,th,
+td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,
+hgroup,footer,header,nav,section,video,object{display:block}a 
+img{border:0}figure{position:relative}figure img{width:100%}
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: orange;
+    text-shadow: none;
+}
+
+::selection {
+    background: orange;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Generel styles
+   ========================================================================== */
+
+body {
+    background-color: #333333;
+    color: #333333;
+    font-family: 'Droid Serif', Georgia, Times, serif;
+}
+
+.content p {
+    line-height: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.item h1 {
+    font-family: 'Merienda', Verdana, Helvetica, sans-serif;
+    font-size: 1.7em;
+    font-weight: 300;
+    color: darkred;
+    margin-bottom: 0.3em;
+}
+
+.item h2 {
+    font-size: 1.2em;
+    color: darkred;
+    font-weight: 300;
+    font-family: 'Merienda', Verdana, Helvetica, sans-serif;
+    margin-bottom: 0.5em;
+}
+
+a:link     {
+    color: darkred;
+    text-decoration: none;
+}
+a:visited  { color: darkred; }
+a:hover    { color: darkred; }
+a:active   { color: darkred; }
+
+li {
+    margin-left: 1.3em;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+label {
+    display:block;
+    clear:both;
+}
+
+
+/* ==========================================================================
+   Layout styles
+   ========================================================================== */
+
+.content {
+    padding-top: 1em;
+    background-color: #fafbfc;
+}
+
+.header {
+    height: 60px;
+    font-family: 'Merienda', Verdana, Helvetica, sans-serif;
+    font-size: 1.3em;
+    background-color: #333333;
+    color: white;
+    background-image: url("../img/wrapper.png");
+    background-position: 0px 70px;
+    padding-bottom: 10px;
+}
+
+.header h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.3em;
+    margin-bottom: 0px;
+}
+
+.content {
+    min-height: 250px;
+    height: auto;
+    border-bottom: 1em solid #fafbfc;
+}
+
+.content ul {
+    margin-bottom: 0.5em;
+}
+
+.footer {
+    font-family: 'Droid Serif', Verdana, Helvetica, sans-serif;
+    background-color: #333333;
+    color: white;
+    padding-top: 1em;
+
+    /* Force to bottom of page: */
+    width: 100%;
+    height: 4em;
+    bottom: 0;
+    left: 0;
+
+    /* Border */
+    background-color: #333333;
+    background-position: 0px 0px;
+    background-image: url("../img/wrapper2.png");
+    background-repeat: repeat-x;
+}
+
+.item {
+    margin-bottom: 2em;
+}
+
+.side-item {
+    margin-bottom: 1.5em;
+    line-height: 1.1em;
+}
+
+.side-item p, .side-item a {
+    font-size: 0.75em;
+}
+
+.side-item h1, h2 {
+    color: #111111;
+    font-family:'Merienda', Verdana, Helvetica, sans-serif;
+    font-size: 1.15em;
+    font-weight: 600;
+    margin-bottom: 0.3em;
+}
+
+/* ==========================================================================
+   Menu styles
+   ========================================================================== */
+
+
+.header-menu {
+    height: 80px;
+    bottom: 0; 
+    left: 0;
+}
+
+#header-menu a:link     { color: white;     text-decoration:none; }
+#header-menu a:visited  { color: white;     text-decoration:none; }
+#header-menu a:hover    { color: #AAAAAA;   text-decoration:none; } 
+#header-menu a:active   { color: white;     text-decoration:none; }
+
+#header-menu div {
+    position: relative;
+    width: 100%;
+    height: 66px;
+}
+
+#header-menu div span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#header-menu ul li {
+    font-family: 'Droid Serif', Verdana, Helvetica, sans-serif;
+    font-size: 0.8em;
+    margin: 0 20px 0 0px;
+    float: left;
+    list-style-type: none;
+}
+
+
+/* ==========================================================================
+   Post styles
+   ========================================================================== */
+
+.post-meta {
+    border-top-width: 1px;
+    border-color: #696969;
+    border-style: solid;
+
+    font-size: 0.8em;
+
+    margin-top: 1em;
+    padding-bottom: 0.3em;
+    padding-top: 0.3em;
+}
+
+.comment-meta {
+    font-size: 0.70em;
+}
+
+.comment {
+    background-color: rgb(237, 232, 255);
+    margin-top: 1em;
+    padding: 0.5em;
+}
+
+.comment-area {
+    margin-bottom: 2em;
+}
+
+.comment-area input {
+    font-family: 'Crimson Text', Georgia, Times, serif;
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 0.5em;
+}
+
+.comment-textbox {
+    font-family: 'Crimson Text', Georgia, Times, serif;
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 0.5em;
+
+    width: 100%;
+    border-color: #999999;
+
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+
+/* ==========================================================================
+   Mobile design
+   ========================================================================== */
+
+@media handheld, only screen and (max-width: 767px) {
+
+}

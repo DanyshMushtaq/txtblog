@@ -1,0 +1,23 @@
+<div class="comment-area">
+    <form action="/blog/post-comment/{{item.title}}" method="post" id="commentform" accept-charset="utf-8">
+        <h2>Leave a comment</h2>
+
+        <p>Fill out the form below to post a comment.</p>
+
+        <p><label for="author">Name (required)</label>
+            <input id="author" name="author" type="text" value="" size="20" required="true" class="comment-input">
+        </p>
+        <p><label for="email">Email (required, never published)</label>
+            <input id="email" name="email" type="text" value="" size="20" required="true" class="comment-input">
+        </p>
+        <p><label for="url">Website</label>
+            <input id="url" name="url" type="text" value="" size="20" class="comment-input">
+        </p>
+        <p><label for="comment">Comment</label>
+            <textarea id="comment" name="comment" rows="5" required="true" class="comment-textbox"></textarea>
+        </p>
+        <p>
+            <input name="submit" type="submit" id="submit" value="Post Comment">
+        </p>
+    </form>
+</div>

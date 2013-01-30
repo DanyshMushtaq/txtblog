@@ -1,0 +1,9 @@
+...static=true
+...title=Menu
+* [Home][1]
+* [Projects][2]
+* [Blog][3]
+
+[1]: /
+[2]: /static/The+Last+Temptation+of+Homer
+[3]: /blog

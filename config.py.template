@@ -1,0 +1,9 @@
+username = 'admin'
+password = 'pimkems123'
+blog_name = 'Kristian Dorland'
+text_dir = '../krdor.text/'
+frontpage_item = 'Hello'
+sidebar_statics = ['sidebar-contact']
+footer_text = '&copy;2013 Kristian Dorland - mail@krdor.dk'
+log_level = 'DEBUG'
+page_post_limit = 2
