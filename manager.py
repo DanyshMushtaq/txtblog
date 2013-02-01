@@ -1,5 +1,15 @@
-import sqlite3, datetime, time, logging, math, markdown, os
-import config, util, txtparser
+import shutil
+import sqlite3, datetime, time, logging, math, markdown
+import sys, os
+
+try:
+    import config
+except ImportError:
+    path = os.path.abspath(os.path.dirname(sys.argv[0]))       
+    shutil.copy(path+'/config.py.template', path+'/config.py')
+    import config
+
+import util, txtparser
 
 util.setLoggingFromConfig()
 
