@@ -6,7 +6,7 @@ txtblog is a very simple blog engine written in Python3 using Bottle: Python Web
 Features
 --------
 * Sqlite database for storing comments, blog posts, and static page contents.
-* Simple admin console for making changes live on the blog when needed.
+* Simple admin console for making changes go live on the blog when needed.
 * Only depends on python3, beaker, and markdown modules. Bottle is included.
 
 Installation
